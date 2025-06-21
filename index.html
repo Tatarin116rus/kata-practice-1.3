@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
-    <title>Практика 3.1.4</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 3.1.4</title>     
 </head>
 <body>
     <div class="start">
      <header class="header">
         <nav class="header__nav">
-            <button class="header__nav-button">
+            <button class="top__batton">
                 <img src="public/img/menu.svg" alt="Меню">
             </button>
-            <div class="header__divider-one">
+            <div class="divider-one">
                 <img src="public/img/divider.svg" alt="">
-            </div> 
-            <div class="header__logo">
+            </div>             
+            <a class="header__nav-logo"> <!-- исправил -->  
                 <img src="public/img/logo.svg" alt="Логотип CPS">
-            </div>
-            <button class="header__nav-button header__nav-button--call">
+            </a>
+            <button class="top__batton top__batton--call">
                 <img src="public/img/call.svg" alt="звонок">
             </button>
-            <button class="header__nav-button header__nav-button--chat">
+            <button class="top__batton top__batton--chat">
                 <img src="public/img/chat.svg" alt="Чат">
             </button>
-            <button class="header__nav-button header__nav-button--profile">
+            <button class="top__batton top__batton--profile">
                 <img src="public/img/profile.svg" alt="Профиль">
             </button>         
-             <div class="header__divider-two">
+             <div class="divider-two">
                 <img src="public/img/divider.svg" alt="">
             </div> 
-            <button class="header__nav-button header__nav-button--repair">
+            <button class="top__batton top__batton--repair">
                 <img src="public/img/repair.svg" alt="ремонт">
             </button>
-            <button class="header__nav-button header__nav-button--checkstatus">
+            <button class="top__batton top__batton--checkstatus">
                 <img src="public/img/checkstatus.svg" alt="Поиск">
             </button>
         </nav>
@@ -45,32 +45,40 @@
                 <img class="main__svg" src="public/img/highlight.svg" alt="" >
                     <h1 class="main__header">Услуги и сервисы</h1> 
                     <div class="buttons__top">
-                            <button class="button__top header__nav-button">
+                        <button class="button__top top__batton"> <!-- исправил -->
                             <span>Оставить заявку</span>
                                 <img src="public/img/repair.svg" alt="Оставить заявку">
                         </button>
-                        <button class="button__top header__nav-button">
+                        <button class="button__top top__batton">
                             <span>Статус ремонта</span>
                                 <img src="public/img/checkstatus.svg" alt="Статус ремонта">
-                        </button>   
+                        </button>
+                    </div>    <!-- исправил -->   
             </div>
-              </section>
-        <div class="div__menu">
-             <nav class="div__menu-nav">
-                        <ul class="menu__list">
-                            <li class="menu__button menu__button--active">    <a href="#">Ремонтируемые бренды</a>
-                            </li>
-                            <li class="menu__button">    <a href="#">Ремонтируемые устройства</a>
-                            </li>
-                            <li class="menu__button">    <a href="#">Цены на услуги</a>   
-                            </li>
-                            <li class="menu__button">    <a href="#">Адреса сервисных центров</a>
-                            </li>
-                            <li class="menu__button">    <a href="#">Специальные цены</a>
-                            </li>
-                            <li class="menu__button">    <a href="#">Отзывы</a>      
-                            </li>
-                        </ul>
+        </section>
+        <div class="div__menu"> <!-- исправил -->
+            <nav class="menu-swiper">
+                <ul class="menu-swiper-list">
+                    <li class="menu-swiper-button menu-swiper-button--active">    
+                        <a href="#">Ремонтируемые бренды</a>
+                    </li>
+                    <li class="menu-swiper-button">    
+                        <a href="#">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="menu-swiper-button">    
+                        <a href="#">Цены на услуги</a>   
+                    </li>
+                    <li class="menu-swiper-button">    
+                        <a href="#">Адреса сервисных центров</a>
+                    </li>
+                    <li class="menu-swiper-button">    
+                        <a href="#">Специальные цены</a>
+                    </li>
+                    <li class="menu-swiper-button">  
+                        <a href="#">Отзывы</a>      
+                    </li>
+                </ul>
+            <nav>
         </div>
       
         <section class="base">
@@ -81,7 +89,8 @@
                             <p class="text__base">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
                                 <span class="text__base-two">, что подтверждает большое количество постоянных клиентов. 
                                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                                        </span></p>
+                                </span>
+                            </p>
                 </div>
             <button class="base__button">
                 <img class="base__button-info"src="public/img/expand.png" alt=""> Читать далее
