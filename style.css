@@ -2,7 +2,7 @@
 @font-face 
 {
     font-family: 'TT Lakes';
-    src: url(TTLakes/TTLakes-Regular.ttf) format("truetype");
+    src: url(public/TTLakes/TTLakes-Regular.woff) format("truetype");
     font-weight:normal;
     font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face 
 {
     font-family: 'TT Lakes';
-    src: url(TTLakes/TTLakes-Bold.ttf) format("truetype");
+    src: url(public/TTLakes/TTLakes-Bold.woff) format("truetype");
     font-weight:bold;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
 @font-face 
 {
     font-family: 'TT Lakes Medium';
-    src: url(TTLakes/TTLakes-Medium.woff) format("truetype");
+    src: url(public/TTLakes/TTLakes-Medium.woff) format("truetype");
     font-weight: 500;
     font-style: normal;
 }
@@ -79,16 +79,15 @@
 }
 
 .divider {
-   align-self: center;
+  align-self: center;
 }
 
 /* тело сайта*/
 body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 0;
   font-family: "TT Lakes", sans-serif;
+  background: #F8F8F8;
+  color: #1B1C21;
+  font-size: 16px;
 }
 
 .main {
@@ -117,6 +116,7 @@ body {
   position: relative;
   font-weight: bold;
   padding-left: 16px;
+  font-weight: 700;
 }
 
 /* код для кнопок под "услуги и сервисы"*/
@@ -206,6 +206,8 @@ a {
   padding: 8px 16px 16px 16px;
   line-height: 18px;
 }
+.text__base,
+.text__base-two,
 .base__info {
   font-size: 14px;
   letter-spacing: 0.2px;
@@ -280,6 +282,7 @@ p {
 }
 
 .base {
+
   margin-top: 32px;
   padding-right: 25px;
   padding-left: 16px;
@@ -302,7 +305,6 @@ p {
      
 }
   
-
 @media(min-width: 1119px)  {
   .header {
   display: none;
@@ -316,19 +318,37 @@ main {
   padding: 42px 32px 49px 32px;
 }
 
-.main__header,
-.main__section {
+.main__header {
   padding: 0;
 }
+
+.main__section {
+  padding: 0;
+ 
+}
+.menu-swiper-list {
+  padding-top: 10px;
+  overflow: hidden;
+    flex-wrap: wrap;
+}
+
+
 .main__div {
   display: flex;
   justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 8px;
+  
+  padding-bottom: 0; 
 }  
+.menu-swiper-button {
+  margin-left: 0;
+ padding-bottom: 8.63px 13px 8px 24px;
+}
+.menu-swiper-button--active {
+  padding-bottom: 8.63px 13px 8px 24px;
+}
 
 .main__header { 
-  left: -230px;
+  left: -220px;
 }
 .main__svg{ 
   margin-left: -27px;
@@ -339,17 +359,20 @@ main {
   gap: 32px;
 }  
 .button__top {
+  font-family: "TT Lakes", sans-serif;
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 1.5em;
+  font-size: 16px;
 }
 .menu__list {
   overflow: hidden;
   flex-wrap: wrap;
 }
-.menu__button--active {
-  margin-left: 0;
-}
+
 
 .base {
   display: grid;
